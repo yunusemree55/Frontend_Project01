@@ -1,0 +1,16 @@
+<table class="table">
+    <thead>
+        <tr style="background-color: rgb(49, 118, 245); font-weight: 500; color: cornsilk;">
+            <td>İsim</td>
+            <td>Soyad</td>
+            <td>Kiralama Tarihi</td>
+            <td>Teslim Tarihi</td>
+        </tr>
+    </thead>
+    <tr *ngFor = "let rental of rentals">
+        <td>{{rental.customerName}} </td>
+        <td>{{rental.customerLastName}} </td>
+        <td>{{rental.rentDate}} </td>
+        <td>{{rental.returnDate}} </td>
+    </tr>
+</table>
